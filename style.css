@@ -1,0 +1,116 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: #f2f2f2;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+
+#main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 890px;
+  width: 375px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#first{
+  display: flex;
+  flex-direction: column;
+  height: 33.3333%;
+  width: 100%;
+  padding: 30px;
+  background-color: #e38826;
+}
+
+#second{
+  display: flex;
+  flex-direction: column;
+  height: 33.3333%;
+  width: 100%;
+  padding: 30px;
+  background-color: #006970;
+}
+
+#third{
+  display: flex;
+  flex-direction: column;
+  height: 33.3333%;
+  width: 100%;
+  padding: 30px;
+  background-color: #004241;
+}
+
+button{
+  padding: 10px;
+  width: 110px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+}
+
+button:hover{
+  background-color: #949494;
+  cursor: pointer;
+}
+
+#first button{
+  color: #e38826;
+}
+
+#first button:hover{
+  color: white;
+}
+
+#second button{
+  color: #006970;
+}
+
+#second button:hover{
+  color: white;
+}
+
+#third button{
+  color: #004241;
+}
+
+#third button:hover{
+  color: white;
+}
+
+h2{
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+}
+
+
+@media (min-width: 1440px){
+
+  #main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 800px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+  }
+
+  button{
+    margin-top: 50px;
+  }
+
+}
